@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    padding:0;
+    margin:0;
+    font-size:1.6rem;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color:  hsl(222, 26%, 31%);
+}
+
+.cal{
+    display: grid;
+    gap: 2rem;
+    width: 420px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1{
+    color: #fff;
+}
+
+.theme{
+    display: grid;
+    gap: 0;
+}
+
+.steps,.bord{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bord{
+    border-radius: 20px;
+    background-color: rgb(44, 43, 46);
+}
+.steps{
+    color: white;
+}
+
+.bord span{
+    transition: all .3s ease;
+    cursor: pointer;
+    background-color: transparent;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+}
+span.dark{
+    background-color: white;
+}
+
+span.active{
+    background-color: white;
+}
+.display{
+    overflow: auto;
+    width: 95%;
+    height: 70px;
+    display: grid;
+    font-size: 3rem;
+    color: aliceblue;
+    place-items: end;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: hsl(224, 36%, 15%);
+}
+
+
+.keys{
+    border-radius: 10px;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: hsl(223, 31%, 20%);
+}
+.keys>div:hover{
+    background-color: rgb(216, 211, 211);
+}
+.keys>div:active{
+    transform: scale(.8);
+    box-shadow: 1px 1px 1px hsl(0, 95%, 25%);
+}
+.keys>div{
+    transition: all .07s ease;
+    cursor: pointer;
+    display: grid;
+    width: 60px;
+    place-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px rgb(172, 172, 172);
+}
+
+.keys>div.the2{
+    background-color:  hsl(0, 11%, 93%);
+}
+.keys>div.the2:hover{
+    background-color: white;
+}
+.keys.them2{
+    background-color:  hsl(0, 5%, 81%);
+}
+
+
+
+div[data-key="equal"]{
+    width: 160px;
+    grid-column: 3/5;
+    background-color: rgb(243, 83, 83);
+}
+div[data-key="reset"]{
+    width: 160px;
+    grid-column: 1/3;
+    background-color: rgb(83, 193, 226);
+}
+div[data-key="del"]{
+    background-color: rgb(83, 193, 226);
+}
+div[data-key="equal"]:hover{
+    background-color: rgb(207, 41, 41);
+}
+div[data-key="reset"]:hover{
+    width: 160px;
+    grid-column: 1/3;
+    background-color: rgb(34, 143, 177);
+}
+div[data-key="del"]:hover{
+    background-color: rgb(34, 143, 177);
+}
+
+
+.key.click{
+    transform: scale(.98);
+    background-color: rgb(194, 201, 202);
+    box-shadow: 2px 2px 3px rgb(83, 193, 226);
+}
+
+
+/* theme 2 */
+.body2{
+    background-color: hsl(0, 0%, 90%);
+}
+.them2{
+    background-color: hsl(0, 0%, 93%);
+    color: #333;
+}
+
+/* theme 3 */
+.body3{
+    background: hsl(268, 75%, 9%);
+}
+
+.keys>div.them3{
+    background-color:  hsl(281, 89%, 26%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 3px 3px 3px hsl(285, 91%, 52%);
+    
+}
+div.oprator .them3{
+    background-color:  hsl(281, 89%, 26%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 3px 3px 3px hsl(285, 91%, 52%);
+}
+.keys>div.them3:hover{
+    background-color: rgb(78, 69, 126);
+}
+div.keys .Border_them3{
+    background:  hsl(268, 71%, 12%);
+}
+
+div.disthem3{
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+div.decimal .them3{
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%); 
+}
+
+
+
